@@ -1,0 +1,25 @@
+<div>
+    <h3>Calculadora Simples</h3>
+
+    <div>
+        <label for="numero1">Número 1:</label>
+        <input type="number" [(ngModel)]="numero1" name="numero1" id="numero1">
+    </div>
+
+    <div>
+        <label for="numero2">Número 2:</label>
+        <input type="number" [(ngModel)]="numero2" name="numero2" id="numero2">
+    </div>
+
+    <div>
+        <button (click)="somar()">Somar</button>
+        <button (click)="subtrair()">Subtrair</button>
+        <button (click)="multiplicar()">Multiplicar</button>
+        <button (click)="dividir()">Dividir</button>
+    </div>
+
+    <div *ngIf="resultado">
+        <h4>Resultado: {{resultado}}</h4>
+    </div>
+
+</div>
